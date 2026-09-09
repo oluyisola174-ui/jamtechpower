@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jamtech electrical & solar homes ltd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+
+    <!-- Logo -->
+    <div id="logo">
+         <img src="logo.png" width="50px" >
+        <div id="company-name">
+            <h2>JAMTECH</h2>
+            <p>Electrical & Solar Homes Ltd</p>
+        </div>
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="solar-calculator.html">Solar Calculator</a></li>
+
+            <li><a href="projects.html">Projects</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+    <div id="quote-btn">
+        <button
+       onclick="window.location.href='https://wa.me/2349132497711'; target='_blank'" >Get a Quote</button>
+    </div>
+    <div id="menu-bar">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</header>
+<section id="calculate">
+
+    
+    <div class="calculator-subheading">
+
+        <div id="subheading-test">
+
+            <h2>
+                SOLAR LOAD <span>ASSESSMENT</span><br>
+                CALCULATOR
+            </h2>
+
+            <p>
+                Get an instant estimate of your solar system size,
+                battery capacity, inverter rating and backup time.
+                Simply add your appliances below and let the calculator
+                do the work.
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+    <div id="calculate-content">
+
+
+        <!-- LEFT SIDE -->
+
+        <div id="calculator-left">
+
+            <h3>Appliance Details</h3>
+
+            <div class="input-row">
+                <input
+                    type="text"
+                    id="customerName"
+                     placeholder="Customer Name"
+                     required
+                >
+                <input
+                    type="text"
+                    placeholder="Appliance Name"
+                    id="appliance-name"
+                >
+
+                <input
+                    type="number"
+                    placeholder="Watts"
+                    id="watts"
+                    min="50"
+                >
+
+                <input
+                    type="number"
+                    placeholder="Quantity"
+                    id="quantity"
+                    min="1"
+                >
+
+                <input
+                    type="number"
+                    placeholder="Hours/Day"
+                    id="hours"
+                    min="1"
+                >
+
+                <button id="add-btn">
+
+                    Add
+
+                </button>
+
+            </div>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Appliance</th>
+
+                        <th>Watts</th>
+
+                        <th>Qty</th>
+
+                        <th>Hours</th>
+
+                        <th>Daily Wh</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="table-body">
+
+                    <tr>
+
+                        <td colspan="6">
+
+                            No appliances added yet.
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <aside id="calculator-right">
+
+            <h3>Calculation Summary</h3>
+
+
+            <div id="summary-box">
+                <div class="summary-card">
+
+                   <h4>Total Daily Energy</h4>
+
+                   <span id="daily-energy">
+
+                    0 Wh
+
+                  </span>
+
+                </div>
+
+
+               <div khclass="summary-card">
+
+                 <h4>Recommended Solar Panels</h4>
+
+                  <span id="panel-result">
+
+                    0 W
+
+                 </span>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                 <h4>Battery Capacity</h4>
+
+                 <span id="battery-result">
+
+                    0 Ah
+
+                 </span>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                 <h4>Inverter Rating</h4>
+
+                 <span id="inverter-result">
+
+                    0 VA
+
+                 </span>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                 <h4>Estimated Backup Time</h4>
+
+                 <span id="backup-result">
+
+                    0 Hours
+
+                 </span>
+
+                </div>
+
+            </div>
+
+
+            <div id="recommendation">
+
+                <h4>
+
+                    <i class="fa-solid fa-user-gear"></i>
+
+                    Engineer Recommendation
+
+                </h4>
+
+                <p id="recommendation-text">
+
+                    Your personalized recommendation will appear here after calculation.
+
+                </p>
+
+            </div>
+
+
+
+            <div id="button-group">
+
+                <button id="calculate-btn">
+
+                    Calculate
+
+                </button>
+
+                <button id="reset-btn">
+
+                    Reset
+
+                </button>
+
+                <button id="download-btn">
+
+                    Download PDF
+
+                </button>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</section>
+<!-- WHY GO SOLAR -->
+
+<section id="why-solar">
+
+    <div class="section-title">
+
+        <h2>
+            Why Go Solar With <span>Jamtech?</span>
+        </h2>
+
+        <p>
+            Enjoy reliable, affordable and environmentally friendly
+            electricity with professionally designed solar systems.
+        </p>
+
+    </div>
+
+
+    <div class="benefits-grid">
+
+        <div class="benefit-card">
+
+            <i class="fa-solid fa-solar-panel"></i>
+
+            <h3>Lower Electricity Bills</h3>
+
+            <p>
+                Reduce your monthly electricity expenses by generating
+                your own clean energy.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card">
+
+            <i class="fa-solid fa-battery-full"></i>
+
+            <h3>Reliable Backup Power</h3>
+
+            <p>
+                Stay powered during grid outages with dependable battery
+                storage solutions.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <h3>Eco-Friendly Energy</h3>
+
+            <p>
+                Reduce carbon emissions while protecting the environment
+                for future generations.
+            </p>
+
+        </div>
+
+
+        <div class="benefit-card">
+
+            <i class="fa-solid fa-medal"></i>
+
+            <h3>Professional Installation</h3>
+
+            <p>
+                Certified engineers ensure safe installation and maximum
+                system performance.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<footer id="footer">
+
+    <div id="footer-container">
+
+        <!-- Company Information -->
+        <div class="footer-box">
+
+            <h2>JAMTECH</h2>
+
+            <p>
+                Jamtech Electrical & Solar Homes Ltd is committed to
+                providing reliable solar energy solutions, electrical
+                wiring, CCTV installation, inverter systems and
+                maintenance services across Nigeria.
+            </p>
+
+            <div id="social-icons">
+
+                <a href="https://www.facebook.com/james.oluyisola.9"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="https://www.instagram.com/jamtech_ng"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="https://www.tiktok.com/@jamtech_ng"><i class="fa-brands fa-tiktok"></i></a>
+
+            </div>
+
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="solar-calculator.html">Solar Calculator</a></li>
+
+            <li><a href="projects.html">Projects</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Services -->
+        <div class="footer-box">
+
+            <h3>Our Services</h3>
+
+            <ul>
+
+                <li>Solar Installation</li>
+
+                <li>Inverter Installation</li>
+
+                <li>Lithium Battery Build</li>
+
+                <li>Electrical Wiring</li>
+
+                <li>CCTV Installation</li>
+
+                <li>Maintenance & Repairs</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box" id="call">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Ayobo, Lagos, Nigeria
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +234 913-249-7711
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@jamtech electrical & solar homes ltd.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-clock"></i>
+                Mon - Sat : 9:00AM - 6:00PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="footer-bottom">
+
+        <p>
+            © 2026 Jamtech Electrical & Solar Homes Ltd.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Designed by Johnny Web Development
+        </p>
+
+    </div>
+
+</footer>
+</body>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.4/jspdf.plugin.autotable.min.js"></script>
+
+</html>
